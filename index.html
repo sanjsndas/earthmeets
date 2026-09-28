@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO essentials -->
+  <title>Earth Meets Architecture — Interior Design & Architecture Journal</title>
+  <meta name="description" content="Independent editorial publication exploring interior design, architecture, materials, space planning, and sustainable living. In-depth guides and critical essays.">
+  <meta name="keywords" content="interior design, architecture, home design, materials, lighting, space planning, sustainable architecture, modern homes">
+  <meta name="author" content="Earth Meets Architecture Editorial">
+  <link rel="canonical" href="https://earthmeetsarchitecture.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Earth Meets Architecture — Interior Design & Architecture Journal">
+  <meta property="og:description" content="In-depth guides on interior design, architecture, materials, space planning, and sustainable living.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://earthmeetsarchitecture.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Earth Meets Architecture",
+    "description": "Independent editorial publication covering interior design and architecture.",
+    "url": "https://earthmeetsarchitecture.com/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Earth Meets Architecture"
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: #faf9f7;
+      color: #1e1e1e;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    ul, ol {
+      padding-left: 1.4rem;
+    }
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.8rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+      border-bottom: 1px solid #ddd9d2;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin: 1.8rem 0 0.8rem;
+    }
+    p {
+      margin-bottom: 1.4rem;
+      font-size: 1.1rem;
+      color: #2c2c2c;
+    }
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 3rem;
+      margin: 2rem 0 4rem;
+    }
+    @media (max-width: 900px) {
+      .editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e3dfd8;
+      padding: 1.8rem 0 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      font-family: 'Georgia', serif;
+      color: #2d2a24;
+    }
+    .logo span {
+      font-weight: 300;
+      font-style: italic;
+      color: #8b7b6b;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      list-style: none;
+      padding: 0;
+    }
+    .nav-links a {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #4f4a44;
+      font-family: 'Helvetica', Arial, sans-serif;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #b07d5e;
+    }
+    .search-bar {
+      margin-top: 1rem;
+      display: flex;
+      max-width: 300px;
+      border: 1px solid #ddd9d2;
+      background: white;
+    }
+    .search-bar input {
+      padding: 0.6rem 1rem;
+      border: none;
+      font-size: 0.9rem;
+      width: 100%;
+      font-family: 'Helvetica', Arial, sans-serif;
+      background: transparent;
+    }
+    .search-bar input:focus {
+      outline: none;
+    }
+    .search-bar button {
+      background: #2d2a24;
+      color: white;
+      border: none;
+      padding: 0 1.2rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    /* ---------- CATEGORY FILTERS ---------- */
+    .category-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e3dfd8;
+    }
+    .category-filters button {
+      background: none;
+      border: 1px solid #ccc7bf;
+      padding: 0.4rem 1.1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      font-family: 'Helvetica', Arial, sans-serif;
+      color: #4f4a44;
+      transition: all 0.2s;
+    }
+    .category-filters button.active,
+    .category-filters button:hover {
+      background: #2d2a24;
+      border-color: #2d2a24;
+      color: white;
+    }
+    /* ---------- ARTICLE CARDS ---------- */
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #e3dfd8;
+      padding: 2rem 0;
+    }
+    .article-card:first-of-type {
+      padding-top: 0;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #8b7b6b;
+      font-family: 'Helvetica', Arial, sans-serif;
+      margin-bottom: 0.5rem;
+    }
+    .card-meta .category {
+      background: #f0ede8;
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+    }
+    .article-card h3 {
+      margin: 0.5rem 0 0.8rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    .article-card h3 a:hover {
+      color: #b07d5e;
+    }
+    .article-card .excerpt {
+      font-size: 1.05rem;
+      color: #4a4540;
+      margin-bottom: 0.8rem;
+    }
+    .read-time {
+      font-size: 0.85rem;
+      color: #8b7b6b;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .article-img {
+      margin: 1.2rem 0;
+      border: 1px solid #e3dfd8;
+    }
+    .article-img img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    .article-img figcaption {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+      background: #f5f3ef;
+      color: #6b6259;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    /* ---------- SIDEBAR ---------- */
+    .sidebar {
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .sidebar-widget {
+      background: #ffffff;
+      border: 1px solid #e3dfd8;
+      padding: 1.8rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .sidebar-widget h4 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #2d2a24;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+    .popular-list {
+      list-style: none;
+      padding: 0;
+    }
+    .popular-list li {
+      margin-bottom: 1.2rem;
+      border-bottom: 1px dashed #ddd9d2;
+      padding-bottom: 0.8rem;
+    }
+    .popular-list li:last-child {
+      border-bottom: none;
+    }
+    .popular-list a {
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: block;
+      margin-bottom: 0.2rem;
+      color: #2d2a24;
+    }
+    .popular-list a:hover {
+      color: #b07d5e;
+    }
+    .popular-list .meta {
+      font-size: 0.75rem;
+      color: #8b7b6b;
+    }
+    .newsletter-widget input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #ccc7bf;
+      margin-bottom: 0.8rem;
+      font-size: 0.9rem;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .newsletter-widget button {
+      background: #2d2a24;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      width: 100%;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    /* ---------- FAQ & ABOUT SECTIONS ---------- */
+    .faq-item {
+      border-bottom: 1px solid #e3dfd8;
+      padding: 1.2rem 0;
+      cursor: pointer;
+    }
+    .faq-item h3 {
+      font-size: 1.2rem;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+    }
+    .faq-item .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #4a4540;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+    .faq-item h3::after {
+      content: '+';
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: #8b7b6b;
+    }
+    .faq-item.open h3::after {
+      content: '−';
+    }
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: #1e1c19;
+      color: #d6d0c8;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .footer-grid h5 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .footer-grid ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-grid a:hover {
+      color: #b07d5e;
+    }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #3a3631;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      font-size: 0.85rem;
+      color: #a9a29a;
+    }
+    /* ---------- UTILITY ---------- */
+    .hidden {
+      display: none !important;
+    }
+    .mt-2 { margin-top: 2rem; }
+    .mb-2 { margin-bottom: 2rem; }
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 700px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+      .header-inner { flex-direction: column; gap: 1rem; }
+      .nav-links { gap: 1rem; }
+      .article-card h3 { font-size: 1.4rem; }
+      .article-img img { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">Earth <span>Meets</span> Architecture</div>
+    <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+    </ul>
+  </div>
+  <div class="container" style="margin-top:0.8rem;">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      <button id="searchBtn">Search</button>
+    </div>
+  </div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="container">
+
+  <!-- CATEGORY FILTERS -->
+  <div class="category-filters" id="categoryFilters">
+    <button data-category="all" class="active">All</button>
+    <button data-category="interior">Interior Design</button>
+    <button data-category="architecture">Architecture</button>
+    <button data-category="home">Home Design</button>
+    <button data-category="materials">Materials</button>
+    <button data-category="space">Space Planning</button>
+    <button data-category="lighting">Lighting</button>
+    <button data-category="furniture">Furniture</button>
+    <button data-category="modern">Modern Homes</button>
+    <button data-category="sustainable">Sustainable</button>
+  </div>
+
+  <!-- EDITORIAL GRID -->
+  <div class="editorial-grid">
+    <!-- LEFT COLUMN: ARTICLES -->
+    <section id="articlesContainer">
+
+      <!-- FEATURED ARTICLE (large) -->
+      <article class="article-card featured" data-category="interior architecture">
+        <div class="card-meta">
+          <span class="category">Interior Design</span>
+          <span>March 12, 2025</span>
+        </div>
+        <h3><a href="#">The Quiet Power of Material Honesty in Modern Interiors</a></h3>
+        <figure class="article-img">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop" alt="Warm minimalist living room with exposed concrete wall and oak flooring">
+          <figcaption>Material honesty: concrete, oak, and linen in a Berlin apartment. Photo: Unsplash</figcaption>
+        </figure>
+        <p class="excerpt">Why the most enduring interiors embrace raw, unadorned materials — and how to use them without slipping into austerity. A deep dive into texture, patina, and the poetry of the unfinished.</p>
+        <span class="read-time">12 min read</span>
+      </article>
+
+      <!-- ARTICLE 2 -->
+      <article class="article-card" data-category="architecture">
+        <div class="card-meta">
+          <span class="category">Architecture</span>
+          <span>March 10, 2025</span>
+        </div>
+        <h3><a href="#">Passive House Principles for Renovations: A Practical Guide</a></h3>
+        <p class="excerpt">Retrofitting an old building to passive house standards is challenging but transformative. We break down insulation, thermal bridging, ventilation, and airtightness — without the jargon.</p>
+        <span class="read-time">18 min read</span>
+      </article>
+
+      <!-- ARTICLE 3 -->
+      <article class="article-card" data-category="space">
+        <div class="card-meta">
+          <span class="category">Space Planning</span>
+          <span>March 8, 2025</span>
+        </div>
+        <h3><a href="#">The 60-Centimetre Rule: Human Dimensions That Shape Great Rooms</a></h3>
+        <figure class="article-img">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop" alt="Architectural floor plan sketch with human scale figures and dimensions">
+          <figcaption>Human scale is the invisible grid behind every comfortable space. Photo: Unsplash</figcaption>
+        </figure>
+        <p class="excerpt">From circulation widths to dining clearances, these simple measurements separate a cramped layout from a generous one. Learn the numbers that matter.</p>
+        <span class="read-time">9 min read</span>
+      </article>
+
+      <!-- ARTICLE 4 -->
+      <article class="article-card" data-category="lighting">
+        <div class="card-meta">
+          <span class="category">Lighting</span>
+          <span>March 5, 2025</span>
+        </div>
+        <h3><a href="#">Layered Lighting: The Art of Controlling Atmosphere After Dark</a></h3>
+        <p class="excerpt">One ceiling light is never enough. We explore ambient, task, and accent layers — plus the color temperatures and dimming strategies that make a home feel alive at night.</p>
+        <span class="read-time">14 min read</span>
+      </article>
+
+      <!-- ARTICLE 5 -->
+      <article class="article-card" data-category="materials">
+        <div class="card-meta">
+          <span class="category">Materials</span>
+          <span>March 3, 2025</span>
+        </div>
+        <h3><a href="#">Lime Plaster, Clay Paint, and the Return of Breathable Walls</a></h3>
+        <p class="excerpt">Modern buildings are sealed tight. But a new generation of builders is rediscovering vapour-permeable finishes that regulate humidity and age gracefully. Here’s what you need to know.</p>
+        <span class="read-time">11 min read</span>
+      </article>
+
+      <!-- ARTICLE 6 -->
+      <article class="article-card" data-category="smallspaces">
+        <div class="card-meta">
+          <span class="category">Small Spaces</span>
+          <span>Feb 28, 2025</span>
+        </div>
+        <h3><a href="#">40 Square Metres: Designing a Complete Home in a Tiny Footprint</a></h3>
+        <figure class="article-img">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&h=630&fit=crop" alt="Compact studio apartment with multifunctional furniture and light wood tones">
+          <figcaption>Every centimetre counts: a 40 m² apartment in Lisbon. Photo: Unsplash</figcaption>
+        </figure>
+        <p class="excerpt">Custom joinery, sightlines, and the courage to leave space empty. A case study of three micro-apartments that feel twice their size.</p>
+        <span class="read-time">10 min read</span>
+      </article>
+
+      <!-- ARTICLE 7 -->
+      <article class="article-card" data-category="interior">
+        <div class="card-meta">
+          <span class="category">Interior Design</span>
+          <span>Feb 25, 2025</span>
+        </div>
+        <h3><a href="#">The Colour of Quiet: Using Muted Tones Without Going Beige</a></h3>
+        <p class="excerpt">Sage, ochre, dusty rose, and terracotta — how to build a palette that whispers rather than shouts. Includes sample combinations for north- and south-facing rooms.</p>
+        <span class="read-time">8 min read</span>
+      </article>
+
+      <!-- ARTICLE 8 -->
+      <article class="article-card" data-category="architecture modern">
+        <div class="card-meta">
+          <span class="category">Modern Homes</span>
+          <span>Feb 22, 2025</span>
+        </div>
+        <h3><a href="#">The Courtyard House: Ancient Typology, Contemporary Relevance</a></h3>
+        <p class="excerpt">From Roman domus to Japanese tsubo-niwa, the courtyard offers privacy, light, and cross-ventilation. We look at five contemporary interpretations that work in dense cities.</p>
+        <span class="read-time">15 min read</span>
+      </article>
+
+      <!-- ARTICLE 9 -->
+      <article class="article-card" data-category="furniture">
+        <div class="card-meta">
+          <span class="category">Furniture</span>
+          <span>Feb 20, 2025</span>
+        </div>
+        <h3><a href="#">How to Choose a Sofa That Lasts 20 Years</a></h3>
+        <p class="excerpt">Frame joinery, cushion filling, upholstery rub counts — the unsexy details that determine whether your sofa becomes an heirloom or landfill. A buyer’s guide.</p>
+        <span class="read-time">7 min read</span>
+      </article>
+
+      <!-- ARTICLE 10 -->
+      <article class="article-card" data-category="sustainable">
+        <div class="card-meta">
+          <span class="category">Sustainable Design</span>
+          <span>Feb 18, 2025</span>
+        </div>
+        <h3><a href="#">Embodied Carbon: The Blind Spot in Green Building</a></h3>
+        <figure class="article-img">
+          <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&h=630&fit=crop" alt="Timber frame construction with visible wooden beams and straw bales">
+          <figcaption>Low-carbon materials: timber, straw, and clay. Photo: Unsplash</figcaption>
+        </figure>
+        <p class="excerpt">Operational energy gets all the attention, but the carbon locked in materials often outweighs it. We explain how to calculate and reduce embodied carbon in your project.</p>
+        <span class="read-time">13 min read</span>
+      </article>
+
+      <!-- ARTICLE 11 -->
+      <article class="article-card" data-category="home">
+        <div class="card-meta">
+          <span class="category">Home Design</span>
+          <span>Feb 15, 2025</span>
+        </div>
+        <h3><a href="#">The Case Against the Open-Plan Kitchen</a></h3>
+        <p class="excerpt">Open plan is not always better. We explore the return of the closed kitchen, the scullery, and the "broken plan" layout that balances connection with acoustic sanity.</p>
+        <span class="read-time">9 min read</span>
+      </article>
+
+      <!-- ARTICLE 12 -->
+      <article class="article-card" data-category="architecture">
+        <div class="card-meta">
+          <span class="category">Architecture</span>
+          <span>Feb 12, 2025</span>
+        </div>
+        <h3><a href="#">Brutalism’s Afterlife: Why Concrete Is Back (and How to Use It Well)</a></h3>
+        <p class="excerpt">Once reviled, brutalist textures are being reinterpreted in homes and galleries. A look at board-formed concrete, bush-hammered finishes, and the importance of light.</p>
+        <span class="read-time">12 min read</span>
+      </article>
+
+      <!-- ARTICLE 13 -->
+      <article class="article-card" data-category="interior">
+        <div class="card-meta">
+          <span class="category">Interior Design</span>
+          <span>Feb 10, 2025</span>
+        </div>
+        <h3><a href="#">The Psychology of Clutter: What Your Mess Says About Your Space</a></h3>
+        <p class="excerpt">Storage isn’t just practical — it’s emotional. We speak to organisers and designers about the hidden reasons we accumulate, and how to design for letting go.</p>
+        <span class="read-time">11 min read</span>
+      </article>
+
+      <!-- ARTICLE 14 -->
+      <article class="article-card" data-category="lighting">
+        <div class="card-meta">
+          <span class="category">Lighting</span>
+          <span>Feb 7, 2025</span>
+        </div>
+        <h3><a href="#">Daylight Autonomy: Designing Rooms That Don’t Need Lamps at Noon</a></h3>
+        <p class="excerpt">Window placement, room depth, and reflectance values. How to optimise for natural light in new builds and renovations — even in cloudy climates.</p>
+        <span class="read-time">10 min read</span>
+      </article>
+
+      <!-- ARTICLE 15 -->
+      <article class="article-card" data-category="materials">
+        <div class="card-meta">
+          <span class="category">Materials</span>
+          <span>Feb 5, 2025</span>
+        </div>
+        <h3><a href="#">A Field Guide to Sustainable Timber: FSC, PEFC, and Beyond</a></h3>
+        <p class="excerpt">Not all wood is equal. We explain certifications, species suitability, and the difference between reclaimed, reclaimed-look, and virgin timber.</p>
+        <span class="read-time">8 min read</span>
+      </article>
+
+      <!-- ARTICLE 16 -->
+      <article class="article-card" data-category="space">
+        <div class="card-meta">
+          <span class="category">Space Planning</span>
+          <span>Feb 3, 2025</span>
+        </div>
+        <h3><a href="#">Circulation vs. Storage: The Eternal Floor Plan Tug-of-War</a></h3>
+        <p class="excerpt">Every hallway is lost storage; every cupboard is lost flow. We look at design strategies that trick the eye and reclaim square metres without compromise.</p>
+        <span class="read-time">9 min read</span>
+      </article>
+
+      <!-- ARTICLE 17 -->
+      <article class="article-card" data-category="modern">
+        <div class="card-meta">
+          <span class="category">Modern Homes</span>
+          <span>Jan 30, 2025</span>
+        </div>
+        <h3><a href="#">The Glass Box Problem: Privacy and Thermal Comfort in Glass Houses</a></h3>
+        <p class="excerpt">Floor-to-ceiling glazing is beautiful but often uncomfortable. We explore shading, films, and double-skin facades that keep the view without the greenhouse effect.</p>
+        <span class="read-time">12 min read</span>
+      </article>
+
+      <!-- ARTICLE 18 -->
+      <article class="article-card" data-category="sustainable">
+        <div class="card-meta">
+          <span class="category">Sustainable Design</span>
+          <span>Jan 27, 2025</span>
+        </div>
+        <h3><a href="#">Rainwater Harvesting for Domestic Use: A Homeowner’s Manual</a></h3>
+        <p class="excerpt">From simple rain barrels to integrated greywater systems. What’s legal, what’s practical, and how to size a tank for your roof and usage.</p>
+        <span class="read-time">14 min read</span>
+      </article>
+
+      <!-- ARTICLE 19 -->
+      <article class="article-card" data-category="furniture">
+        <div class="card-meta">
+          <span class="category">Furniture</span>
+          <span>Jan 24, 2025</span>
+        </div>
+        <h3><a href="#">The Chair That Fits: A Guide to Ergonomic Seating for Home Offices</a></h3>
+        <p class="excerpt">Seat height, lumbar support, armrest adjustability. We review what actually matters for long hours at a desk, without the gaming-chair aesthetic.</p>
+        <span class="read-time">8 min read</span>
+      </article>
+
+      <!-- ARTICLE 20 -->
+      <article class="article-card" data-category="interior home">
+        <div class="card-meta">
+          <span class="category">Home Design</span>
+          <span>Jan 21, 2025</span>
+        </div>
+        <h3><a href="#">The Entrance Sequence: Designing a Hallway That Works</a></h3>
+        <p class="excerpt">First impressions, shoe storage, and the transition from public to private. A practical guide to the most overlooked room in the house.</p>
+        <span class="read-time">7 min read</span>
+      </article>
+
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <!-- Popular articles -->
+      <div class="sidebar-widget">
+        <h4>Most Read</h4>
+        <ul class="popular-list">
+          <li><a href="#">The 60-Centimetre Rule: Human Dimensions</a><span class="meta">9 min read</span></li>
+          <li><a href="#">Passive House Principles for Renovations</a><span class="meta">18 min read</span></li>
+          <li><a href="#">Layered Lighting: The Art of Atmosphere</a><span class="meta">14 min read</span></li>
+          <li><a href="#">Embodied Carbon: The Blind Spot</a><span class="meta">13 min read</span></li>
+          <li><a href="#">The Case Against the Open-Plan Kitchen</a><span class="meta">9 min read</span></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="sidebar-widget newsletter-widget">
+        <h4>Editor’s Letter</h4>
+        <p style="font-size:0.95rem; margin-bottom:1rem;">A weekly email with our best long reads and practical guides. No spam, ever.</p>
+        <input type="email" placeholder="Your email address" aria-label="Email address">
+        <button>Subscribe</button>
+      </div>
+
+      <!-- About the editors -->
+      <div class="sidebar-widget">
+        <h4>About</h4>
+        <p style="font-size:0.95rem;">Earth Meets Architecture is an independent publication founded in 2021. We publish in-depth articles for designers, architects, and curious homeowners. Our editors have backgrounds in architectural history, interior design, and building science.</p>
+        <p style="font-size:0.95rem; margin-top:0.8rem;"><a href="#about" style="text-decoration:underline;">Read more about us →</a></p>
+      </div>
+
+      <!-- FAQ teaser -->
+      <div class="sidebar-widget">
+        <h4>Common Questions</h4>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>What is the ideal ceiling height?</h3>
+          <div class="faq-answer">For living spaces, 2.7–3.0 metres feels generous. Below 2.4 m becomes oppressive. In renovations, removing a suspended ceiling can transform a room.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>How much does an interior designer cost?</h3>
+          <div class="faq-answer">Fees vary widely: from £50/hr for consultations to 10–15% of project cost for full service. Many designers offer fixed-price room packages.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>Is sustainable architecture more expensive?</h3>
+          <div class="faq-answer">Often 5–15% upfront, but operational savings and health benefits usually outweigh the premium over time.</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ========== ABOUT, CONTACT, PRIVACY, TERMS ========== -->
+  <section id="about" style="border-top:1px solid #e3dfd8; padding:2.5rem 0;">
+    <h2>About Earth Meets Architecture</h2>
+    <p>Founded in 2021, <strong>Earth Meets Architecture</strong> is an independent editorial publication dedicated to the built environment. We publish long-form journalism, practical guides, and critical essays on interior design, architecture, materials, and sustainable living.</p>
+    <p>Our team includes architects, interior designers, and writers who believe that good design is for everyone — not just those who can afford a private practice. We explain the how and why behind the spaces we inhabit.</p>
+    <h3>Editorial independence</h3>
+    <p>We do not accept sponsored content disguised as editorial. Any commercial partnerships are clearly labelled. Our recommendations are based on research, interviews, and firsthand experience.</p>
+    <h3>Contact</h3>
+    <p>For editorial enquiries: <strong>hello@earthmeetsarchitecture.com</strong><br>
+    For advertising: <strong>partners@earthmeetsarchitecture.com</strong></p>
+    <h3>Privacy Policy</h3>
+    <p>We collect minimal data. Newsletter emails are stored with our provider and never sold. Analytics are anonymised. You can request deletion at any time by emailing privacy@earthmeetsarchitecture.com.</p>
+    <h3>Terms of Use</h3>
+    <p>All content is copyright Earth Meets Architecture. You may quote up to 100 words with a link back. Reproduction of full articles requires permission. We are not liable for decisions made based on our articles — always consult a qualified professional for your specific project.</p>
+    <h3>Cookie Policy</h3>
+    <p>We use essential cookies for site functionality and optional analytics cookies (which you can decline). No third-party advertising cookies are used.</p>
+  </section>
+
+  <!-- ========== FAQ SECTION ========== -->
+  <section id="faq" style="border-top:1px solid #e3dfd8; padding:2.5rem 0;">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <h3>What’s the difference between interior design and interior architecture?</h3>
+      <div class="faq-answer">Interior design focuses on finishes, furniture, and decoration within existing walls. Interior architecture involves structural changes — moving walls, altering ceiling heights, and reconfiguring spaces.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <h3>How do I start a renovation project?</h3>
+      <div class="faq-answer">Begin with a clear brief: how you want to live, not just how it should look. Set a realistic budget (add 20% contingency). Hire an architect or designer early — they save money by avoiding costly mistakes.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <h3>What are the most common interior design mistakes?</h3>
+      <div class="faq-answer">1. Scale errors (too-small rugs, oversized sofas). 2. Poor lighting (one central fixture). 3. Ignoring circulation. 4. Buying everything at once instead of layering over time.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <h3>How can I make a small room feel bigger?</h3>
+      <div class="faq-answer">Use low-profile furniture, unify flooring, hang curtains high and wide, choose light colours for large surfaces, and keep sightlines to windows clear. Mirrors help but aren’t magic.</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h5>Earth Meets Architecture</h5>
+      <p style="font-size:0.9rem;">Independent editorial on interior design, architecture, and sustainable living. Established 2021.</p>
+    </div>
+    <div>
+      <h5>Categories</h5>
+      <ul>
+        <li><a href="#interior">Interior Design</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#lighting">Lighting</a></li>
+        <li><a href="#smallspaces">Small Spaces</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Information</h5>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#cookies">Cookies</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Newsletter</h5>
+      <p style="font-size:0.9rem;">Weekly long reads and practical guides.</p>
+      <input type="email" placeholder="Email" style="padding:0.5rem; width:100%; margin-top:0.5rem; border:1px solid #4f4a44; background:#2d2a24; color:white;">
+      <button style="background:#b07d5e; border:none; color:white; padding:0.5rem 1rem; margin-top:0.5rem; width:100%; cursor:pointer;">Subscribe</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Earth Meets Architecture. All rights reserved. <a href="#" style="text-decoration:underline;">Privacy</a> · <a href="#" style="text-decoration:underline;">Terms</a> · <a href="#" style="text-decoration:underline;">Cookies</a></p>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    // ---------- SEARCH AND FILTER ----------
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const articlesContainer = document.getElementById('articlesContainer');
+    const articles = Array.from(articlesContainer.querySelectorAll('.article-card'));
+    const filterButtons = document.querySelectorAll('#categoryFilters button');
+
+    let activeCategory = 'all';
+    let searchTerm = '';
+
+    function filterArticles() {
+      articles.forEach(article => {
+        const category = article.dataset.category || '';
+        const text = article.innerText.toLowerCase();
+        const matchesCategory = activeCategory === 'all' || category.includes(activeCategory);
+        const matchesSearch = searchTerm === '' || text.includes(searchTerm.toLowerCase());
+        if (matchesCategory && matchesSearch) {
+          article.classList.remove('hidden');
+        } else {
+          article.classList.add('hidden');
+        }
+      });
+    }
+
+    // Category buttons
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeCategory = btn.dataset.category;
+        filterArticles();
+      });
+    });
+
+    // Search
+    function performSearch() {
+      searchTerm = searchInput.value.trim();
+      filterArticles();
+    }
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') performSearch();
+    });
+
+    // ---------- FAQ TOGGLE (already inline, but ensure consistency) ----------
+    // (Already handled with onclick in HTML, but we can add a cleaner event listener)
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', function(e) {
+        // if clicking on a link inside, don't toggle
+        if (e.target.tagName === 'A') return;
+        this.classList.toggle('open');
+      });
+    });
+
+    // ---------- smooth scroll for internal links ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO essentials -->
+  <title>About — Earth Meets Architecture | Editorial Team & Mission</title>
+  <meta name="description" content="Learn about Earth Meets Architecture: an independent editorial publication exploring interior design, architecture, materials, and sustainable living. Our mission, team, and editorial standards.">
+  <meta name="keywords" content="about Earth Meets Architecture, editorial team, architecture publication, interior design journal, sustainable design, independent journalism">
+  <meta name="author" content="Earth Meets Architecture Editorial">
+  <link rel="canonical" href="https://earthmeetsarchitecture.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Earth Meets Architecture — Our Mission & Editorial Team">
+  <meta property="og:description" content="Independent publication covering interior design, architecture, and sustainable living. Meet the team and learn about our editorial independence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://earthmeetsarchitecture.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Earth Meets Architecture",
+    "description": "Independent editorial publication covering interior design and architecture.",
+    "url": "https://earthmeetsarchitecture.com/about.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Earth Meets Architecture",
+      "foundingDate": "2021",
+      "description": "Independent editorial publication exploring interior design, architecture, materials, space planning, and sustainable living."
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: #faf9f7;
+      color: #1e1e1e;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    ul, ol {
+      padding-left: 1.4rem;
+    }
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.8rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+      border-bottom: 1px solid #ddd9d2;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin: 1.8rem 0 0.8rem;
+    }
+    p {
+      margin-bottom: 1.4rem;
+      font-size: 1.1rem;
+      color: #2c2c2c;
+    }
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 3rem;
+      margin: 2rem 0 4rem;
+    }
+    @media (max-width: 900px) {
+      .editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e3dfd8;
+      padding: 1.8rem 0 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      font-family: 'Georgia', serif;
+      color: #2d2a24;
+    }
+    .logo span {
+      font-weight: 300;
+      font-style: italic;
+      color: #8b7b6b;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      list-style: none;
+      padding: 0;
+    }
+    .nav-links a {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #4f4a44;
+      font-family: 'Helvetica', Arial, sans-serif;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #b07d5e;
+    }
+    .search-bar {
+      margin-top: 1rem;
+      display: flex;
+      max-width: 300px;
+      border: 1px solid #ddd9d2;
+      background: white;
+    }
+    .search-bar input {
+      padding: 0.6rem 1rem;
+      border: none;
+      font-size: 0.9rem;
+      width: 100%;
+      font-family: 'Helvetica', Arial, sans-serif;
+      background: transparent;
+    }
+    .search-bar input:focus {
+      outline: none;
+    }
+    .search-bar button {
+      background: #2d2a24;
+      color: white;
+      border: none;
+      padding: 0 1.2rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    /* ---------- ABOUT PAGE SPECIFIC ---------- */
+    .about-hero {
+      background: #ffffff;
+      border-bottom: 1px solid #e3dfd8;
+      padding: 3rem 0 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .about-hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+    }
+    .about-hero .subhead {
+      font-size: 1.3rem;
+      color: #4f4a44;
+      max-width: 720px;
+      font-style: italic;
+      font-family: 'Georgia', serif;
+      line-height: 1.5;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .team-member {
+      background: #ffffff;
+      border: 1px solid #e3dfd8;
+      padding: 1.5rem 1.2rem;
+      text-align: center;
+    }
+    .team-member .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #f0ede8;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      color: #8b7b6b;
+      font-family: 'Georgia', serif;
+      border: 2px solid #ddd9d2;
+    }
+    .team-member h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+      font-weight: 600;
+    }
+    .team-member .role {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #8b7b6b;
+      font-family: 'Helvetica', Arial, sans-serif;
+      margin-bottom: 0.6rem;
+    }
+    .team-member p {
+      font-size: 0.95rem;
+      color: #4a4540;
+      margin-bottom: 0;
+    }
+    .value-block {
+      background: #ffffff;
+      border-left: 4px solid #b07d5e;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+    }
+    .value-block p:last-child {
+      margin-bottom: 0;
+    }
+    .stat-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin: 2rem 0;
+      padding: 1.5rem 0;
+      border-top: 1px solid #e3dfd8;
+      border-bottom: 1px solid #e3dfd8;
+    }
+    .stat-item {
+      flex: 1 1 140px;
+    }
+    .stat-item .number {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #2d2a24;
+      font-family: 'Georgia', serif;
+      line-height: 1;
+    }
+    .stat-item .label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #8b7b6b;
+      font-family: 'Helvetica', Arial, sans-serif;
+      margin-top: 0.3rem;
+    }
+    /* ---------- SIDEBAR ---------- */
+    .sidebar {
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .sidebar-widget {
+      background: #ffffff;
+      border: 1px solid #e3dfd8;
+      padding: 1.8rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .sidebar-widget h4 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #2d2a24;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+    .newsletter-widget input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #ccc7bf;
+      margin-bottom: 0.8rem;
+      font-size: 0.9rem;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .newsletter-widget button {
+      background: #2d2a24;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      width: 100%;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e3dfd8;
+      padding: 1.2rem 0;
+      cursor: pointer;
+    }
+    .faq-item h3 {
+      font-size: 1.1rem;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+    }
+    .faq-item .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #4a4540;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+    .faq-item h3::after {
+      content: '+';
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: #8b7b6b;
+    }
+    .faq-item.open h3::after {
+      content: '−';
+    }
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: #1e1c19;
+      color: #d6d0c8;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .footer-grid h5 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .footer-grid ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-grid a:hover {
+      color: #b07d5e;
+    }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #3a3631;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      font-size: 0.85rem;
+      color: #a9a29a;
+    }
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 700px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+      .header-inner { flex-direction: column; gap: 1rem; }
+      .nav-links { gap: 1rem; }
+      .about-hero h1 { font-size: 2.4rem; }
+      .about-hero .subhead { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">Earth <span>Meets</span> Architecture</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+  </div>
+  <div class="container" style="margin-top:0.8rem;">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      <button id="searchBtn">Search</button>
+    </div>
+  </div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="container">
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <h1>About Earth Meets Architecture</h1>
+    <p class="subhead">An independent editorial publication exploring the spaces we inhabit — and the materials, light, and ideas that shape them.</p>
+  </section>
+
+  <!-- EDITORIAL GRID -->
+  <div class="editorial-grid">
+    <!-- LEFT COLUMN: ABOUT CONTENT -->
+    <section>
+
+      <h2>Our Mission</h2>
+      <p>Founded in 2021, <strong>Earth Meets Architecture</strong> exists to demystify the built environment. We publish long-form journalism, practical guides, and critical essays on interior design, architecture, materials, space planning, and sustainable living.</p>
+      <p>We believe that good design is not a luxury reserved for those with private practices and unlimited budgets. It is a fundamental part of how we live, work, and feel. Our goal is to explain the <em>how</em> and the <em>why</em> behind the spaces around us — without jargon, without pretension, and without hidden agendas.</p>
+
+      <div class="value-block">
+        <p><strong>Editorial independence is non-negotiable.</strong> We do not accept sponsored content disguised as editorial. Any commercial partnerships are clearly labelled. Our recommendations are based on research, interviews, and firsthand experience.</p>
+      </div>
+
+      <h2>What We Cover</h2>
+      <p>Our articles span a deliberately broad range of topics, because the built environment does not fit into neat silos:</p>
+      <ul style="margin-bottom:1.5rem; font-size:1.05rem; color:#2c2c2c;">
+        <li><strong>Interior Design</strong> — colour, texture, composition, and the psychology of rooms.</li>
+        <li><strong>Architecture</strong> — building typologies, structural innovation, and urbanism.</li>
+        <li><strong>Materials</strong> — timber, stone, clay, lime, concrete, and their environmental footprints.</li>
+        <li><strong>Space Planning</strong> — human dimensions, circulation, and the geometry of comfort.</li>
+        <li><strong>Lighting</strong> — daylight, layered artificial light, and the atmosphere of a home after dark.</li>
+        <li><strong>Furniture</strong> — joinery, upholstery, and how to choose pieces that last decades.</li>
+        <li><strong>Sustainable Design</strong> — passive principles, embodied carbon, and low-impact building.</li>
+        <li><strong>Small Spaces</strong> — micro-apartments, compact homes, and clever storage.</li>
+      </ul>
+
+      <div class="stat-row">
+        <div class="stat-item">
+          <div class="number">200+</div>
+          <div class="label">Articles published</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">4</div>
+          <div class="label">Editorial staff</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">2021</div>
+          <div class="label">Founded</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">0</div>
+          <div class="label">Sponsored posts</div>
+        </div>
+      </div>
+
+      <h2>Meet the Editors</h2>
+      <p>Our team brings together backgrounds in architectural history, interior design, building science, and independent journalism. We are practitioners as well as writers — and we believe that makes our coverage sharper.</p>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="avatar">L</div>
+          <h4>Lena Hartmann</h4>
+          <div class="role">Editor-in-Chief</div>
+          <p>Architectural historian and former practising architect. Lena founded EMA to bridge the gap between professional discourse and public curiosity.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">M</div>
+          <h4>Marcus Oyelaran</h4>
+          <div class="role">Senior Editor, Materials & Sustainability</div>
+          <p>Building scientist with a focus on low-carbon materials. Marcus writes our deeply researched guides on timber, clay, and embodied carbon.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">S</div>
+          <h4>Sofia Reyes</h4>
+          <div class="role">Interior Design Editor</div>
+          <p>Interior designer and colour specialist. Sofia leads our coverage of residential interiors, lighting, and the psychology of space.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">J</div>
+          <h4>James Whitfield</h4>
+          <div class="role">Contributing Editor, Architecture</div>
+          <p>Writer and critic covering contemporary architecture, urbanism, and the intersection of buildings and public life.</p>
+        </div>
+      </div>
+
+      <h2>Our Editorial Standards</h2>
+      <p>Every article we publish is researched, written, and edited by humans. We do not use AI to generate editorial content. We cite sources where appropriate, and we correct errors promptly and transparently.</p>
+      <p>We are self-funded through advertising and reader support. Advertisers have no influence over editorial content. If we ever publish a commercial partnership, it will be clearly marked as such.</p>
+
+      <h2>Contact Us</h2>
+      <p>For editorial enquiries, pitches, or corrections: <strong>hello@earthmeetsarchitecture.com</strong><br>
+      For advertising and partnerships: <strong>partners@earthmeetsarchitecture.com</strong><br>
+      For privacy-related requests: <strong>privacy@earthmeetsarchitecture.com</strong></p>
+
+      <h2>Privacy & Terms</h2>
+      <p>We collect minimal data. Newsletter emails are stored with our provider and never sold. Analytics are anonymised. You can request deletion at any time by emailing privacy@earthmeetsarchitecture.com.</p>
+      <p>All content is copyright Earth Meets Architecture. You may quote up to 100 words with a link back. Reproduction of full articles requires permission. We are not liable for decisions made based on our articles — always consult a qualified professional for your specific project.</p>
+      <p>We use essential cookies for site functionality and optional analytics cookies (which you can decline). No third-party advertising cookies are used.</p>
+
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <!-- Newsletter -->
+      <div class="sidebar-widget newsletter-widget">
+        <h4>Editor’s Letter</h4>
+        <p style="font-size:0.95rem; margin-bottom:1rem;">A weekly email with our best long reads and practical guides. No spam, ever.</p>
+        <input type="email" placeholder="Your email address" aria-label="Email address">
+        <button>Subscribe</button>
+      </div>
+
+      <!-- Quick facts -->
+      <div class="sidebar-widget">
+        <h4>Quick Facts</h4>
+        <ul style="list-style:none; padding:0; font-size:0.95rem;">
+          <li style="margin-bottom:0.8rem;"><strong>Founded:</strong> 2021</li>
+          <li style="margin-bottom:0.8rem;"><strong>Based:</strong> London & Berlin</li>
+          <li style="margin-bottom:0.8rem;"><strong>Coverage:</strong> Global</li>
+          <li style="margin-bottom:0.8rem;"><strong>Frequency:</strong> 3–5 articles/week</li>
+          <li style="margin-bottom:0.8rem;"><strong>Model:</strong> Independent, reader-supported</li>
+        </ul>
+      </div>
+
+      <!-- FAQ teaser -->
+      <div class="sidebar-widget">
+        <h4>Common Questions</h4>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>Do you accept guest posts?</h3>
+          <div class="faq-answer">Rarely, and only from established writers or practitioners. Pitch us first with a clear outline. We do not accept SEO-driven guest posts.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>How can I support your work?</h3>
+          <div class="faq-answer">Subscribe to our newsletter, share our articles, and consider whitelisting us in your ad blocker. Reader support keeps us independent.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>Do you review products?</h3>
+          <div class="faq-answer">We occasionally review books and materials, but we do not accept payment for reviews. Any review copies are disclosed.</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h5>Earth Meets Architecture</h5>
+      <p style="font-size:0.9rem;">Independent editorial on interior design, architecture, and sustainable living. Established 2021.</p>
+    </div>
+    <div>
+      <h5>Categories</h5>
+      <ul>
+        <li><a href="#interior">Interior Design</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#lighting">Lighting</a></li>
+        <li><a href="#smallspaces">Small Spaces</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Information</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Newsletter</h5>
+      <p style="font-size:0.9rem;">Weekly long reads and practical guides.</p>
+      <input type="email" placeholder="Email" style="padding:0.5rem; width:100%; margin-top:0.5rem; border:1px solid #4f4a44; background:#2d2a24; color:white;">
+      <button style="background:#b07d5e; border:none; color:white; padding:0.5rem 1rem; margin-top:0.5rem; width:100%; cursor:pointer;">Subscribe</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Earth Meets Architecture. All rights reserved. <a href="#" style="text-decoration:underline;">Privacy</a> · <a href="#" style="text-decoration:underline;">Terms</a> · <a href="#" style="text-decoration:underline;">Cookies</a></p>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    // ---------- SEARCH ----------
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    function performSearch() {
+      const term = searchInput.value.trim();
+      if (term.length > 0) {
+        // In a real site, this would redirect to a search results page.
+        // For this demo, we simply alert the user.
+        alert('Search functionality is available on the home page. You searched for: "' + term + '"');
+      }
+    }
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') performSearch();
+    });
+
+    // ---------- FAQ TOGGLE ----------
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') return;
+        this.classList.toggle('open');
+      });
+    });
+
+    // ---------- SMOOTH SCROLL FOR INTERNAL LINKS ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>
